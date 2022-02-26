@@ -17,9 +17,7 @@ public class Car implements Runnable {
      static CyclicBarrier cbl = new CyclicBarrier(4, () -> {
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка завершилась!!!");}
     );
-     static CyclicBarrier cyclicBarrier = new CyclicBarrier(1, () -> {
-        System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка завершилась!!!");}
-    );
+    
     public String getName() {
         return name;
     }
