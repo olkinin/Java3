@@ -20,12 +20,14 @@ public class BoxGeneric<T extends Fruit> {
         float weightBox = 0f;
         for (T fruit : fruits) {
             weightBox = weightBox + fruit.getWeight();
+
+
         }
-      return weightBox;
+        return weightBox;
     }
 
     public boolean compare(BoxGeneric<? extends Fruit> another) {
-        return this.getWeightBox()==another.getWeightBox();
+        return this.getWeightBox() == another.getWeightBox();
 
     }
 }
